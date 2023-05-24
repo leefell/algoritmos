@@ -1,4 +1,4 @@
-algoritmo "Média de notas"
+algoritmo "MÃ©dia de notas"
 
 var
    nota1, nota2, nota3, nota4, mediaf: real
@@ -13,5 +13,5 @@ inicio
    leia(nota4)
    
    mediaf <- (nota1 + nota2 + nota3 + nota4) / 4
-   escreva ("A Média Final é: ", mediaf) // se eu colcoar por exemplo mediaf:2:6 mostrara 6 casa pós a virgula
+   escreva ("A MÃ©dia Final Ã©: ", mediaf) // se eu colocar por exemplo mediaf:2:6 mostrara 6 casa pÃ³s a virgula
 fimalgoritmo
