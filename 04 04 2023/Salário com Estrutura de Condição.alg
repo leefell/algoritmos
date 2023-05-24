@@ -1,14 +1,13 @@
-//estudar e refazer em casa porque eu simplesmente na  o consegui fazer na aula
-//Faça um programa que receba o código correspondente ao cargo de um funcionário e seu salário atual e mostre o cargo, o valor do aumento e seu novo salário.
-//Os cargos estão na tabela a seguir.
-//Código        Cargo           Aumento
+//FaÃ§a um programa que receba o cÃ³digo correspondente ao cargo de um funcionÃ¡rio e seu salÃ¡rio atual e mostre o cargo, o valor do aumento e seu novo salÃ¡rio.
+//Os cargos estÃ£o na tabela a seguir.
+//CÃ³digo        Cargo           Aumento
   //1           Escriturario      50%
   //2           Secretario        35%
   //3           Caixa             20%
   //4           Gerente           10%
   //5           Diretor            0%
   
-//Obs: caso seja digitado um código que não está na lista, deve ser mostrado a mensagem: "Código inválido"
+//Obs: caso seja digitado um cÃ³digo que nÃ£o estÃ¡ na lista, deve ser mostrado a mensagem: "CÃ³digo invÃ¡lido"
 algoritmo "Cargos, Aumento, Salario"
 
 var
@@ -17,18 +16,18 @@ var
    cargo_desc:literal
 
 inicio
-   escreva ("Digite o cargo do funcionário entre 1 à 5:")
+   escreva ("Digite o cargo do funcionÃ¡rio entre 1 Ã  5:")
    leia (cargo)
 
    se((cargo >= 1) e (cargo <=5))entao
-      escreva ("Digite o valor do salário:")
+      escreva ("Digite o valor do salÃ¡rio:")
       leia (salario)
       se (cargo=1) entao
-         cargo_desc <- "Escriturário"
+         cargo_desc <- "EscriturÃ¡rio"
          aumento<-salario*50/100
       senao
          se (cargo=2) entao
-            cargo_desc <- "Secretário"
+            cargo_desc <- "SecretÃ¡rio"
             aumento<-salario*35/100
          senao
             se (cargo=3)entao
@@ -46,11 +45,11 @@ inicio
          fimse
       fimse
       novosal<-salario+aumento
-      escreval ("O cargo é: ",cargo_desc)
-      escreval ("O valor do aumento é: ",aumento)
-      escreval ("O novo salário é: ",novosal)
+      escreval ("O cargo Ã©: ",cargo_desc)
+      escreval ("O valor do aumento Ã©: ",aumento)
+      escreval ("O novo salÃ¡rio Ã©: ",novosal)
    senao
-      escreval("Código inválido.")
+      escreval("CÃ³digo invÃ¡lido.")
    fimse
 
 fimalgoritmo
